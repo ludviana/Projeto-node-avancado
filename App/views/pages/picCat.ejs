@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PicDog</title>
+  <style>
+    body{
+      background-color: lightseagreen;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    
+    .main{
+      background-color: white;
+      width: 80vw;
+      height: 100vh;
+      border: 0px 3px 0px 3px solid black;
+      box-shadow: 0px 0px 14px black;
+      text-align: center;
+      margin: 0;
+    }
+    .size{
+      margin-top: 10px;
+      width:50vw;
+      height:75vh;
+      border: 3px solid black;
+      border-radius: 5px;
+      box-shadow: 0px 0px 14px black;
+    }
+    .menu{
+      margin: 10px 10px 10px 30px;
+      text-align: justify;
+    }
+    .mt{
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <nav class="menu mt">
+      <a href="/">Formularios</a>
+    </nav>
+    <br/>
+    <h3> <%= nome %> </h3>
+    <div >
+      
+      <img src=" <%= foto %> " alt="Foto" class="size">
+    </div>
+  </div>
+</body>
+</html>

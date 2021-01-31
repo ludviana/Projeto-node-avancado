@@ -1,0 +1,11 @@
+<h3>Selecione uma raça de <u><i>gato</i></u> para ver uma foto dela!</h3>
+<form action="/picCat" method="POST" > 
+  <select name="cat">
+    <% for( let i = 0; i < nomesGato.length ; i++ ){   %>
+
+      <option value="<%=nomesGato[i].id%>"> <%= nomesGato[i].name %> </option>
+
+    <% } %>
+  </select>
+  <button type="submit">Ver Foto</button>
+</form>

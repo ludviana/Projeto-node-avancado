@@ -1,0 +1,21 @@
+<h3>Selecione uma raça de <u><i>cachorro</i></u> para ver uma foto dela!</h3>
+<form action="/picDog" method="POST" > 
+  <select name="dog">
+    <% Object.entries(nomesCachorro.message).forEach(([ keys, value ]) => { %>
+      
+      <% if(value.length > 0 ){
+        
+        for( let i = 0 ; i < value.length ; i++ ){ %>
+        
+        <option value="<%=`${keys}/${value[i]}`%>"> <%= `${value[i]} ${keys}` %> </option>
+      
+      <% }}else if(value.length === 0){ %>
+
+        <option value="<%=`${keys}`%>"> <%= `${keys}` %> </option>
+
+      <% } %> 
+
+    <% }); %> 
+  </select>
+  <button type="submit">Ver Foto</button>
+</form>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      background-color: lightseagreen;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    .cor{
+      color: lightseagreen;
+      text-shadow: 1px 2px 3px black;
+    }
+    .main{
+      background-color: white;
+      width: 80vw;
+      height: 100vh;
+      border: 0px 3px 0px 3px solid black;
+      box-shadow: 0px 0px 14px black;
+      text-align: center;
+      margin: 0;
+    }
+    .mtmb{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .mt{
+      margin-top: 50px;
+    }
+  </style>
+  <title>Formulario</title>
+</head>
+<body>
+  <div class="main">
+    <h1 class="mt cor">Pagina dos formularios</h1>
+    <hr class="mtmb"/>
+    
+
+    <%- include(form1) %>
+    
+      <hr class="mtmb"/>
+  
+    <%- include(form2) %>
+    
+  </div>
+</body>
+</html>
